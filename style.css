@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.maze-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.maze {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 5px;
+}
+
+.maze div {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border: 1px solid #000;
+}
+
+.maze div.path {
+    background-color: green;
+}
+
+.maze div.wall {
+    background-color: black;
+}
+
+button, #message {
+    margin-top: 20px;
+}
